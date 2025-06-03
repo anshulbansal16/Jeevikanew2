@@ -1,30 +1,52 @@
-# Jeevika
+# Jeevika Health App
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A comprehensive health management platform built with Next.js, React, and modern web technologies.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/bansalansh-gmailcoms-projects/v0-jeevika)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/ymAAeSFUfUZ)
+## Features
 
-## Overview
+- AI-powered health analysis
+- BMI tracking and analysis
+- Emergency alerts system
+- Doctor consultation booking
+- Health metrics monitoring
+- Health records management
+- Interactive dashboard
+- User profile management
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Tech Stack
+
+- Next.js 15
+- React 18
+- TypeScript
+- Tailwind CSS
+- Radix UI Components
+- Supabase for backend
+- Vercel for deployment
+
+## Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/anshulbansal16/Jeevikanew2.git
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Run the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Deployment
 
-Your project is live at:
+The app is deployed on Vercel and can be accessed at:
+[https://vercel.com/bansalansh-gmailcoms-projects/v0-jeevika](https://vercel.com/bansalansh-gmailcoms-projects/v0-jeevika)
 
-**[https://vercel.com/bansalansh-gmailcoms-projects/v0-jeevika](https://vercel.com/bansalansh-gmailcoms-projects/v0-jeevika)**
+## Contributing
 
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/ymAAeSFUfUZ](https://v0.dev/chat/projects/ymAAeSFUfUZ)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Contributions are welcome! Please feel free to submit a Pull Request.
