@@ -1,27 +1,17 @@
 import type React from "react"
+import { SidebarNav } from "./sidebar-nav"
 
-type SidebarProps = {}
+type SidebarProps = {
+  className?: string
+}
 
-const Sidebar: React.FC<SidebarProps> = () => {
+export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
   return (
-    <div className="sidebar">
-      {/* Sidebar content goes here */}
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <div className={`flex h-screen w-64 flex-col border-r bg-background ${className}`}>
+      <div className="flex h-14 items-center border-b px-4">
+        <span className="font-semibold">Jeevika Health</span>
+      </div>
+      <SidebarNav />
     </div>
   )
 }

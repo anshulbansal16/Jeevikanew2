@@ -1,7 +1,21 @@
+"use client"
+
 import { Suspense } from "react"
 import { Sidebar } from "@/components/sidebar"
 import { Breadcrumb } from "@/components/breadcrumb"
 import { ProfileContent } from "@/components/profile-content"
+import { ErrorBoundary } from "react-error-boundary"
+
+function ErrorFallback({ error }: { error: Error }) {
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <div className="text-red-500">
+        <h2 className="text-xl font-bold mb-2">Something went wrong:</h2>
+        <pre className="text-sm">{error.message}</pre>
+      </div>
+    </div>
+  )
+}
 
 export default function ProfilePage() {
   return (
@@ -15,9 +29,11 @@ export default function ProfilePage() {
               { label: "Profile", href: "/profile" },
             ]}
           />
-          <Suspense fallback={<div className="text-white">Loading profile...</div>}>
-            <ProfileContent />
-          </Suspense>
+          <ErrorBoundary FallbackComponent={ErrorFallback}>
+            <Suspense fallback={<div className="text-white">Loading profile...</div>}>
+              <ProfileContent />
+            </Suspense>
+          </ErrorBoundary>
         </main>
       </div>
     </div>
